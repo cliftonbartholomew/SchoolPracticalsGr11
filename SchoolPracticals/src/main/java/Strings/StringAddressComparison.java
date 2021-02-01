@@ -9,7 +9,7 @@ package Strings;
  *
  * @author Cliftonb
  */
-public class StringComparisons {
+public class StringAddressComparison {
     public static void main(String[] args) {
         
         //+3 means abc comes first
@@ -54,5 +54,16 @@ public class StringComparisons {
         
         String surname = null;
         System.out.println(surname);
+        
+        // FOR OBJECTS:     == compares the variable address location
+        
+        String myCountry = new String("SA");
+        String yourCountry = new String("SA");
+        String theirCountry = "SA";
+        String coutry = "SA";
+        
+        System.out.println("1. " + (myCountry == yourCountry)); //false
+        System.out.println("2. " + (theirCountry == coutry)); //true
+        System.out.println("3. " + (theirCountry == yourCountry)); //false
     }
 }

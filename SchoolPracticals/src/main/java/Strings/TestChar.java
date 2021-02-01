@@ -21,6 +21,8 @@ public class TestChar {
         //We will learn what the .charAt() function does next week
         char c = JOptionPane.showInputDialog("Enter a character").charAt(0);
         
+        char[] ch = {'a', 'b'}; 
+        String s = new String(ch);
         //TODO 1: ask the user to enter in a single character
         
         //TODO 2: if it is a letter, print out whether it is upper case or lower case AND if it is lowercase
@@ -53,5 +55,6 @@ public class TestChar {
         * 
         * % is non-alphanumeric
         **/
+        
     }
 }
