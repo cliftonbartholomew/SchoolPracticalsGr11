@@ -1,3 +1,5 @@
+package Strings.Challenges;
+
 import javax.swing.*;
 
 

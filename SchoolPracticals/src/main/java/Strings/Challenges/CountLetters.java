@@ -16,7 +16,7 @@ public class CountLetters {
         //countLetters[0] = numA; countLetters[1] = numB; ....
         int[] countLetters = new int[26];
         
-        //
+        //loop through each letter
         for(int i = 0; i< input.length(); i++){
             //Make sure you are only counting ascii 97 (a) to 122 (z) (lower case)
             
