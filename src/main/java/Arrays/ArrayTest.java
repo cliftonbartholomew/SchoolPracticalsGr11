@@ -18,7 +18,7 @@ public class ArrayTest {
 		int[] num = {5, 6};
 		int sum = num[0] + num[1];
 
-		//Transaction t = new Transaction();
+		//Transaction t =  new Transaction();
 		Transaction[] tArr = new Transaction[100];
 
 		int numNums = Integer.parseInt(JOptionPane.showInputDialog("How many numbers?"));
