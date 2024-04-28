@@ -11,73 +11,122 @@ package Arrays;
  */
 public class Sorting {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		int[] nums = {3, 6, 5, 4, 9, 12, 45, 12, 11};
+        int[] nums = {1,2,3,4,5,6,7,8,9};
 
-		System.out.println(nums);
-		bubbleSort(nums);
-		System.out.println(nums);
-	}
+        System.out.println(nums);
+        improvedSelectionSort(nums);
+        System.out.println(nums);
+    }
 
-	public static void bubbleSort(int[] arr) {
+    public static void bubbleSort(int[] arr) {
 
-		for (int sortedIndex = arr.length - 1; sortedIndex >= 0; sortedIndex--) {
-			for (int currentIndex = 0; currentIndex < sortedIndex; currentIndex++) {
+        for (int sortedIndex = arr.length - 1; sortedIndex >= 0; sortedIndex--) {
+            for (int currentIndex = 0; currentIndex < sortedIndex; currentIndex++) {
 
-				if (arr[currentIndex] > arr[currentIndex + 1]) {
-					int temp = arr[currentIndex];
-					arr[currentIndex] = arr[currentIndex + 1];
-					arr[currentIndex + 1] = temp;
-				}
+                if (arr[currentIndex] > arr[currentIndex + 1]) {
+                    int temp = arr[currentIndex];
+                    arr[currentIndex] = arr[currentIndex + 1];
+                    arr[currentIndex + 1] = temp;
+                }
 
-			}
-		}
+            }
+        }
 
-	}
+    }
+    
+    public static void improvedBubbleSort(int[] arr) {
+        boolean sorted = true;
+        for (int sortedIndex = arr.length - 1; sortedIndex >= 0; sortedIndex--) {
+            
+            for (int currentIndex = 0; currentIndex < sortedIndex; currentIndex++) {
 
-	public static void insertionSort(int[] arr) {
-		for (int sortedIndex = 0; sortedIndex < arr.length; sortedIndex++) {
-			for (int currentIndex = sortedIndex; currentIndex < arr.length; currentIndex++) {
+                if (arr[currentIndex] > arr[currentIndex + 1]) {
+                    sorted = false;
+                    int temp = arr[currentIndex];
+                    arr[currentIndex] = arr[currentIndex + 1];
+                    arr[currentIndex + 1] = temp;
+                }
 
-				if (arr[currentIndex] < arr[sortedIndex]) {
-					int temp = arr[currentIndex];
-					arr[currentIndex] = arr[sortedIndex];
-					arr[sortedIndex] = temp;
-				}
-			}
-		}
+            }
+            
+            if(sorted){
+                break;
+            }
+        }
 
-	}
+    }
 
-	public static int linearSearch(int value, int[] sortedArr) {
-		for (int i = 0; i < sortedArr.length - 1; i++) {
-			if (sortedArr[i] == value) {
-				return i;
-			}
-		}
+    public static void selectionSort(int[] arr) {
+        int swops = 0;
+        int comparisons = 0;
+        for (int sortedIndex = 0; sortedIndex < arr.length; sortedIndex++) {
+            for (int currentIndex = sortedIndex + 1; currentIndex < arr.length; currentIndex++) {
+                comparisons++;
+                if (arr[currentIndex] < arr[sortedIndex]) {
+                    swops++;
+                    int temp = arr[currentIndex];
+                    arr[currentIndex] = arr[sortedIndex];
+                    arr[sortedIndex] = temp;
+                }
+            }
+        }
 
-		return -1;
-	}
+        System.out.println("Selection Sort\nSwops: " + swops + "\nComparisons: " + comparisons);
 
-	public static int binarySearch(int value, int[] sortedArr) {
-		int start = 0;
-		int end = sortedArr.length - 1;
+    }
 
-		while (start <= end) {
-			int middle = (start + end) / 2;
+    public static void improvedSelectionSort(int[] arr) {
+        int swops = 0;
+        int comparisons = 0;
+        for (int sortedIndex = 0; sortedIndex < arr.length; sortedIndex++) {
+            int smallestIndex = sortedIndex;
+            for (int currentIndex = sortedIndex + 1; currentIndex < arr.length; currentIndex++) {
+                comparisons++;
+                if (arr[currentIndex] < arr[smallestIndex]) {
+                    smallestIndex = currentIndex;
+                }
+            }
+            
+            swops++;
+            int temp = arr[smallestIndex];
+            arr[smallestIndex] = arr[sortedIndex];
+            arr[sortedIndex] = temp;
+        }
 
-			if (sortedArr[middle] == value) {
-				return middle;
-			} else if (sortedArr[middle] > value) {
-				end = middle - 1;
-			} else {
-				start = middle + 1;
-			}
+        System.out.println("Selection Sort\nSwops: " + swops + "\nComparisons: " + comparisons);
 
-		}
+    }
 
-		return -1;
-	}
+    public static int linearSearch(int value, int[] sortedArr) {
+        for (int i = 0; i < sortedArr.length - 1; i++) {
+            if (sortedArr[i] == value) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public static int binarySearch(int value, int[] sortedArr) {
+        int start = 0;
+        int end = sortedArr.length - 1;
+
+        while (start <= end) {
+            int middle = (start + end) / 2;
+
+            if (sortedArr[middle] == value) {
+                return middle;
+            } else if (sortedArr[middle] > value) {
+                end = middle - 1;
+            } else {
+                start = middle + 1;
+            }
+
+        }
+
+        return -1;
+    }
 
 }

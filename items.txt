@@ -1,0 +1,22 @@
+AV50#B7#Vital Helm#Rare#7 gp#2022-01-11
+NC58#D0#Friendly Boots#Common#3 cp#2022-01-18
+SA27#EE#Sparkling Cloak#Uncommon#11 sp#2022-10-17
+DC29#FC#Desperate Circlet#Rare#17 gp#2021-11-14
+MH89#AD#Iconic Quiver#Uncommon#6 sp#2022-06-05
+LB82#C3#Wrathful Collar#Rare#13 gp#2022-06-09
+ZB26#AF#Desperate Wizard Hat#Rare#4 gp#2022-03-23
+MC26#BD#Fortune Teller's Helm#Rare#10 gp#2022-07-24
+JM61#EF#Heroic Collar#Rare#13 gp#2022-08-09
+SK19#EC#Beastspeaker's Gauntlets#Uncommon#5 sp#2021-11-29
+ND68#D1#Victorious Belt#Common#19 cp#2022-09-30
+TM52#DA#Chill Boots#Common#14 cp#2022-02-25
+ZC54#E5#Arresting Amulet#Uncommon#8 sp#2021-12-19
+JK96#C2#Hadean Helm#Common#4 cp#2022-04-19
+TB14#DE#Histrionic Wizard Hat#Uncommon#3 sp#2022-02-07
+DP81#F3#Striding Gauntlets#Uncommon#14 sp#2021-11-19
+TD97#D7#Maverick Circlet#Common#5 cp#2022-10-19
+JG85#C1#Trickster's Circlet#Common#14 cp#2022-02-23
+AF61#B2#Elysian Orb#Uncommon#3 sp#2021-12-21
+MG45#C0#Secret Quiver#Rare#12 gp#2022-07-16
+MW76#DF#Healing Amulet#Uncommon#18 sp#2022-01-23
+DG99#BF#Meteoric Mask#Uncommon#5 sp#2022-03-29

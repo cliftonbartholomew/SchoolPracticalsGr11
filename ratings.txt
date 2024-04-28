@@ -1,0 +1,3 @@
+john 50
+paul 90
+steve 80
