@@ -12,13 +12,29 @@ import java.util.Scanner;
  */
 public class PersonUI {
     public static void main(String[] args) {
-        
-        Person steve = new Person("Steve", 21, 88.4, "123456543");
-        steve.setAge(22);
+        int num = 5;//type name value
         
         
-        System.out.println("" + steve);
-              
+        //Object type vs primitive type
+        //Static vs non-static
         
+        
+        
+        //static: Person.numOfPeople = 5l;
+        //non-static: john.age = 51;
+        
+        Person john = new Person("John", 18, 38.6, 1.8);
+
+        
+        System.out.println("Johns name: " + john.generateCode());
+        
+        
+        //create a scanner
+        //while has next
+        //read a line
+        //create a line scanner
+        //break into 4 variables
+        //use data to make a person object - Person p = new Person(name, age, weight, height);
+        //print person BMI - System.out.println(p.getName() + "s BMI is: " + p.getBMI());
     }
 }

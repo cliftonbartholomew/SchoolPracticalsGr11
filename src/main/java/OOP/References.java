@@ -28,6 +28,24 @@ public class References {
         
          personChanger(p);
         System.out.println("p.getName(): " + p.getName());
+//        Person p = new Person("simon", 5, 45.6, "1231231");
+//        Person q = new Person("simon", 5, 45.6, "1231231");
+//        Person r = p;
+//        int num = 5;
+//        int num2 = 5;
+//        
+//        
+//        
+//        System.out.println("num==num2: " + (num==num2));
+//        System.out.println("p==q:" + (p==q));
+//        System.out.println("p==r:" + (p==r));
+//        
+//        
+//        numChanger(num);
+//        System.out.println("num: " + num);
+//        
+//         personChanger(p);
+//        System.out.println("p.getName(): " + p.getName());
         
     }
     
@@ -37,5 +55,6 @@ public class References {
     
     public static void personChanger(Person s){
         s.setName("changed");
+//        s.setName("changed");
     }
 }

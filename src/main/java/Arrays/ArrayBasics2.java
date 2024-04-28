@@ -13,6 +13,7 @@ public class ArrayBasics2 {
         int num = 5;
         
         String name = new String("Howsit");
+        String name2 = "Howsit";
         
         String[] names = new String[5];
         names[0] = "Bob";
@@ -36,6 +37,7 @@ public class ArrayBasics2 {
         }
         double avg2 = sum/numbers.length;
         
+        //array literal
         int[] numbers2 = {1, 5, 15, 1, 12};
         
         

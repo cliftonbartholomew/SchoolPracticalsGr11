@@ -1,3 +1,7 @@
 john 50
 paul 90
+<<<<<<< HEAD
 steve 80
+james 95
+peter 21
+aaron 22
